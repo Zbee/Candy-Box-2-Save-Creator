@@ -1,0 +1,81 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Create custom saves for Candy Box 2">
+  <meta name="author" content="Zbee">
+
+  <title>Candy Box 2 Save Creator</title>
+
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet">
+  <link href="http://getbootstrap.com/examples/jumbotron-narrow/jumbotron-narrow.css" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="header">
+      <nav>
+        <ul class="nav nav-pills pull-right">
+          <li role="presentation" class="active"><a href="#">Creator</a></li>
+          <li role="presentation"><a href="#">Modifier</a></li>
+          <li role="presentation"><a href="https://github.com/Zbee/Candy-Box-2-Save-Creator">Github</a></li>
+        </ul>
+      </nav>
+      <h3 class="text-muted">Candy Box 2 Save Creator</h3>
+    </div>
+
+    <div class="row marketing">
+      <div class="col-lg-6">
+        <h4>Booleans</h4>
+        <p>
+          <div class="well">
+            <code>candiesThrownGotChocolateBar</code>
+            <p>If true then when you throw more candies you will not get another chocolate bar.</p>
+            <div class="btn-group btn-group-justified" data-toggle="buttons">
+              <label class="btn btn-primary active">
+                <input type="radio" id="candiesThrownGotChocolateBar1" value="true" name="candiesThrownGotChocolateBar" checked> True
+              </label>
+              <label class="btn btn-primary">
+                <input type="radio" id="candiesThrownGotChocolateBar2" value="false" name="candiesThrownGotChocolateBar"> False
+              </label>
+            </div>
+          </div>
+        </p>
+      </div>
+
+      <div class="col-lg-6">
+        <h4>Numbers</h4>
+        <p>Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum.</p>
+
+        <h4>Strings</h4>
+        <p>Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <p class="pull-right"><a href="http://www.gnu.org/copyleft/gpl.html"><img src="https://www.gnu.org/graphics/gplv3-127x51.png" style="height:24px"></a></p>
+      <p><a href="https://github.com/Zbee/Candy-Box-2-Save-Creator">Made by Zbee</a>, <a href="http://candybox2.net/">Candy Box 2</a> <a href="http://aniwey.net/">made by aniwey</a></p>
+    </footer>
+
+    <script>
+      $("candiesThrownGotChocolateBar1").add("candiesThrownGotChocolateBar2").click(function() {
+        $("candiesThrownGotChocolateBar1").button('toggle');
+        $("candiesThrownGotChocolateBar2").button('toggle');
+      });
+    </script>
+
+  </div> <!-- /container -->
+</body>
+</html>
